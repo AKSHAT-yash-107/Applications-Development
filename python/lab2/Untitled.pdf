@@ -1,0 +1,716 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "ad576da4-2a3f-43bc-b046-366244fcaa36",
+   "metadata": {},
+   "source": [
+    "# LAB-2\n",
+    "# DS IN PYTHON\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1e01324a-2f2a-4729-8188-ee632a875fa9",
+   "metadata": {},
+   "source": [
+    "# LIST\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e8682f5d-92fd-41de-b44a-9116be1fd4df",
+   "metadata": {},
+   "source": [
+    "# 1.> print element after removing even number"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "1b553c0a-44b1-4f57-b6e8-524073c3867c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "ENTER n:  5\n",
+      "enter  element : 1\n",
+      "enter  element : 2\n",
+      "enter  element : 3\n",
+      "enter  element : 4\n",
+      "enter  element : 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5]\n",
+      "[1, 3, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#print element after removing even number\n",
+    "n=int(input(\"ENTER n: \"))\n",
+    "list =[]\n",
+    "result=[]\n",
+    "for i in range(n):\n",
+    "    num = int(input(\"enter  element :\"))\n",
+    "    list.append(num)\n",
+    "print(list)\n",
+    "    \n",
+    "for i in list:\n",
+    "    if i % 2 !=0:\n",
+    "        result.append(i)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1438d020-7e0f-4d3a-897c-f2e3679479ce",
+   "metadata": {},
+   "source": [
+    "# 2.> Program to remove duplicate elements from the list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "df279efa-eb4b-40fb-bf77-2e30577ac547",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "ENTER n:  8\n",
+      "enter  element : 1\n",
+      "enter  element : 2\n",
+      "enter  element : 3\n",
+      "enter  element : 2\n",
+      "enter  element : 3\n",
+      "enter  element : 1\n",
+      "enter  element : 5\n",
+      "enter  element : 7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 2, 3, 1, 5, 7]\n",
+      "list after removing dups = \n",
+      "[1, 2, 3, 5, 7]\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input(\"ENTER n: \"))\n",
+    "list =[]\n",
+    "result=[]\n",
+    "for i in range(n):\n",
+    "    num = int(input(\"enter  element :\"))\n",
+    "    list.append(num)\n",
+    "    \n",
+    "print(list)\n",
+    "\n",
+    "for i in list:\n",
+    "    if i  not in result:\n",
+    "        result.append(i)\n",
+    "\n",
+    "print(\"list after removing dups = \")\n",
+    "print(result)\n",
+    "\n",
+    "\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "53721b76-5c4f-4ef6-be59-5e13220fbd37",
+   "metadata": {},
+   "source": [
+    "# 3.>  Create three lists of numbers, their squares and cubes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "cc398c33-f7dc-452d-bd5c-92a24c5ca0d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "ENTER n:  5\n",
+      "enter  element : 1\n",
+      "enter  element : 2\n",
+      "enter  element : 3\n",
+      "enter  element : 4\n",
+      "enter  element : 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list= [1, 2, 3, 4, 5]\n",
+      "squared list= [1, 4, 9, 16, 25]\n",
+      "cubed list= [1, 8, 27, 64, 125]\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input(\"ENTER n: \"))\n",
+    "list =[]\n",
+    "square=[]\n",
+    "cube=[]\n",
+    "for i in range(n):\n",
+    "    num = int(input(\"enter  element :\"))\n",
+    "    list.append(num)\n",
+    "    \n",
+    "\n",
+    "\n",
+    "for i in list:\n",
+    "    square.append(i**2)\n",
+    "for i in list:\n",
+    "    cube.append(i**3)\n",
+    "\n",
+    "\n",
+    "print(\"list=\",list)\n",
+    "print(\"squared list=\",square)\n",
+    "print(\"cubed list=\",cube)\n",
+    "\n",
+    "\n",
+    "\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5f4a6a14-a2a1-49df-bd68-581fc7dc7331",
+   "metadata": {},
+   "source": [
+    "# TUPLE\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ee433caf-2166-478b-97de-ca95cf100ee5",
+   "metadata": {},
+   "source": [
+    "# 1.> Python program to find the size of a tuple"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "ae21be21-1845-474d-8c41-cd81056d13c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Length of tuple =  10\n"
+     ]
+    }
+   ],
+   "source": [
+    "tuple = ('wdewdw', 'iwecwecp',2334, 4,5,21,31,5,2,54.23)\n",
+    "print(\"Length of tuple = \",len(tuple))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4dafd316-e9ab-45ec-8e50-f5929d425674",
+   "metadata": {},
+   "source": [
+    "# 2.> Python program to find the maximum and minimum elements in a tuple\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "bc5e5481-49aa-4fbf-9a5d-9a48e0406005",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "max element =  2334\n",
+      "min element =  2\n"
+     ]
+    }
+   ],
+   "source": [
+    "tuple = (2334, 4,5,21,31,5,2,54.23)\n",
+    "print(\"max element = \",max(tuple))\n",
+    "print(\"min element = \",min(tuple))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9f6be51a-137e-4117-9a38-c8ebaaacc828",
+   "metadata": {},
+   "source": [
+    "# 3.> Python program to add a tuple to list "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "eeeef1e6-b31c-42d9-b97c-ccc3384e3b65",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Initially List : [9, 3, 1, 4]\n",
+      "List after Addition : [9, 3, 1, 4, 2, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "List = [9, 3, 1, 4]\n",
+    "\n",
+    "\n",
+    "print(\"Initially List : \" + str(List))\n",
+    "\n",
+    "\n",
+    "Tuple = (2, 6)\n",
+    "List += Tuple\n",
+    "\n",
+    "print(\"List after Addition : \" + str(List))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d50a860a-5ac4-424b-b293-277a68f73562",
+   "metadata": {},
+   "source": [
+    " # STRINGS"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "48af1454-0262-4135-8288-9f7ea4c9b293",
+   "metadata": {},
+   "source": [
+    "# 1.> Python  Print EVEN length words"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "e315518d-6e25-438b-9f79-29272d32cbec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "str: Python is a programming language\n",
+      "list converted string: ['Python', 'is', 'a', 'programming', 'language']\n",
+      "EVEN length words:\n",
+      "Python\n",
+      "is\n",
+      "language\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = \"Python is a programming language\"\n",
+    "words = s.split()\n",
+    "\n",
+    "print(\"str:\", s)\n",
+    "print(\"list converted string:\", words)\n",
+    "\n",
+    "print(\"EVEN length words:\")\n",
+    "for w in words:\n",
+    "    if len(w) % 2 == 0:\n",
+    "        print(w)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5a08e905-de5a-4783-b58c-3de4e79aaf5a",
+   "metadata": {},
+   "source": [
+    "# 2.>Python count vowels in a string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "d526a7cf-1706-4509-afd9-00566ceb07fb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string:  akshat shrivastava\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total vowels: 6\n",
+      "Individual count: {'a': 5, 'e': 0, 'i': 1, 'o': 0, 'u': 0}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = input(\"Enter a string: \").lower()\n",
+    "vowels = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}\n",
+    "\n",
+    "for ch in s:\n",
+    "    if ch in vowels:\n",
+    "        vowels[ch] += 1\n",
+    "\n",
+    "print(\"Total vowels:\", sum(vowels.values()))\n",
+    "print(\"Individual count:\", vowels)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5432e69f-c4ab-4c0f-b87e-9dab1d716a59",
+   "metadata": {},
+   "source": [
+    "# 3.> Pythong program to check if substring is presnt in string or not"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "140ea12a-8a18-4948-949d-a05f93ece1f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter main string:  SXACDW\n",
+      "Enter substring:  WD\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Substring is NOT present\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = input(\"Enter main string: \")\n",
+    "sub = input(\"Enter substring: \")\n",
+    "\n",
+    "if sub in s:\n",
+    "    print(\"Substring is present\")\n",
+    "else:\n",
+    "    print(\"Substring is NOT present\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "01100794-b311-44d6-94f2-d6b0353e12cc",
+   "metadata": {},
+   "source": [
+    "# SETS\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2170eb28-45ee-4ba5-9108-db73da1eaeff",
+   "metadata": {},
+   "source": [
+    "# 1.> Remove an Item from a Set if Present"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "90deb1b4-e3be-4295-adc5-e2c56b249d15",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter item to remove:  3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Item not present\n",
+      "Set: {40, 10, 20, 30}\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_set = {10, 20, 30, 40}\n",
+    "item = int(input(\"Enter item to remove: \"))\n",
+    "\n",
+    "if item in my_set:\n",
+    "    my_set.remove(item)\n",
+    "    print(\"Item removed\")\n",
+    "else:\n",
+    "    print(\"Item not present\")\n",
+    "\n",
+    "print(\"Set:\", my_set)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fef03559-44c5-4a44-8d84-04c17fe8297c",
+   "metadata": {},
+   "source": [
+    "# 2.>  Check if a Set is a Superset"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "67936932-f95f-411d-8b3c-409f5ae6e40f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A is a superset of B\n"
+     ]
+    }
+   ],
+   "source": [
+    "A = {1, 2, 3, 4, 5}\n",
+    "B = {2, 3}\n",
+    "\n",
+    "if A >= B:\n",
+    "    print(\"A is a superset of B\")\n",
+    "else:\n",
+    "    print(\"A is NOT a superset of B\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4de77820-ff3c-436b-990e-1a97b464973c",
+   "metadata": {},
+   "source": [
+    "# 3.> FIND LENGTH OF SET"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "525291b6-9ec4-4d21-976c-cf6c14a9875f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Length of set: 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_set = {10, 20, 30, 40, 50}\n",
+    "print(\"Length of set:\", len(my_set))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "45212b85-c2e8-4b88-a5cc-9cb845ee4596",
+   "metadata": {},
+   "source": [
+    "#  DICTIONARY\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "de9c580e-dbdd-4149-bd11-74cf591ab4ac",
+   "metadata": {},
+   "source": [
+    "# 1.> Python program to create a dictionary from a sequence\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "9e9f0046-ff2b-4446-9a9a-908122ee04f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1: 'a', 2: 'b', 3: 'c'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "seq = [(1, 'a'), (2, 'b'), (3, 'c')]\n",
+    "\n",
+    "d = dict(seq)\n",
+    "print(d)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f497e24c-1a7d-451f-94ad-c78e533c5ce6",
+   "metadata": {},
+   "source": [
+    "# 2.> Python program to create a dictionary with integer keys, and print the keys, values & key-value pairs"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "3294cfa7-13fe-43c5-a0a4-25832ab8e92b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter number of elements:  4\n",
+      "Enter key (integer):  2\n",
+      "Enter value:  3\n",
+      "Enter key (integer):  4\n",
+      "Enter value:  5\n",
+      "Enter key (integer):  54\n",
+      "Enter value:  3\n",
+      "Enter key (integer):  2\n",
+      "Enter value:  \n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Dictionary: {2: '', 4: '5', 54: '3'}\n",
+      "\n",
+      "Keys:\n",
+      "2\n",
+      "4\n",
+      "54\n",
+      "\n",
+      "Values:\n",
+      "\n",
+      "5\n",
+      "3\n",
+      "\n",
+      "Key - Value pairs:\n",
+      "2 : \n",
+      "4 : 5\n",
+      "54 : 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter number of elements: \"))\n",
+    "d = {}\n",
+    "\n",
+    "for i in range(n):\n",
+    "    key = int(input(\"Enter key (integer): \"))\n",
+    "    value = input(\"Enter value: \")\n",
+    "    d[key] = value\n",
+    "\n",
+    "print(\"\\nDictionary:\", d)\n",
+    "\n",
+    "print(\"\\nKeys:\")\n",
+    "for k in d.keys():\n",
+    "    print(k)\n",
+    "\n",
+    "print(\"\\nValues:\")\n",
+    "for v in d.values():\n",
+    "    print(v)\n",
+    "\n",
+    "print(\"\\nKey - Value pairs:\")\n",
+    "for k, v in d.items():\n",
+    "    print(k, \":\", v)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "eba592e0-00e8-41c0-88bf-7d9e057ae7ae",
+   "metadata": {},
+   "source": [
+    "# 3.> Python program to Generate dictionary of numbers and their squares (i, i*i) from 1 to N"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "410fd953-c008-430a-9a74-ea68b3c6e0c0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter N:  5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter N: \"))\n",
+    "\n",
+    "squares = {i: i*i for i in range(1, n+1)}\n",
+    "\n",
+    "print(squares)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "64f4984d-ff46-4b3b-b94b-ab9fd3559be5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
